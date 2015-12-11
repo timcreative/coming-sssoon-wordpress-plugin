@@ -1,0 +1,308 @@
+/* ==================================================
+   CSS Imports
+================================================== */
+
+@import url("reset.css");
+
+/* ==================================================
+   Icon Fonts
+================================================== */
+
+@import url("fonts/fontawesome/font-awesome.css");
+
+/* ==================================================
+   Google Fonts
+================================================== */
+
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,600italic,700,700italic");
+@import url("http://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,400,400italic,700,700italic");
+
+/* ==================================================
+   Global Styles
+================================================== */
+
+*
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+html
+{
+	height: 100%;
+	overflow: auto;
+	background: #FFF url("../images/bg.jpg") no-repeat;
+	background-size: cover;
+	
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body
+{
+	font-family: "Roboto Condensed", Arial, Verdana, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #FFF;
+	line-height: 32px;
+	font-weight: 300;
+	
+	text-rendering: optimizeLegibility;
+	vertical-align: baseline;
+}
+
+::selection
+{
+	background: #1ABC9C;
+	color: #FFF;
+}
+
+::-moz-selection
+{
+	background: #1ABC9C;
+	color: #FFF;
+}
+
+a
+{
+	color: #1ABC9C;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #FFF;
+}
+
+img
+{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+}
+
+/* ==================================================
+   Layout Styles
+================================================== */
+
+#outercont
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+	#outercont #innercont
+	{
+		display: inline-block;
+		width: 100%;
+		padding: 25px;
+	}
+	
+		#outercont #innercont .bodycontainer
+		{
+			margin: 0 auto;
+			width: 100%;
+			max-width: 1140px;
+		}
+	
+/* ==================================================
+   Sections
+================================================== */
+.fa{
+	  color: rgb(26, 188, 156);
+}
+#socialmedia{
+	padding-top:10px;
+}
+#content
+{
+	padding: 40px 25px;
+	text-align: left;
+	background: url("../images/bg-transparent.png") repeat;
+	text-align: center;
+}
+
+	#content p
+	{
+		margin: 0 0 20px 0;
+	}
+	
+		#content p:last-child
+		{
+			margin-bottom: 0;
+		}
+	
+	#content strong
+	{
+		font-weight: 600;
+	}
+	
+	#content em
+	{
+		font-style: italic;
+	}
+	
+		/** Main Header **/
+		
+		#content h1
+		{
+			display: inline-block;
+			color: #FFF;
+			font-size: 60px;
+			line-height: 60px;
+			font-weight: 500;
+			letter-spacing: -0.6px;
+			font-family: monospace;
+			text-transform: uppercase;
+			margin: 0 0 25px 0;
+			padding: 10px 16px;
+			background: #1ABC9C;
+		}
+	
+		/** Countdown Timer **/
+		
+		#countdowncont
+		{
+			width: 100%;
+			max-width: 600px;
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+
+			#countdowncont ul#countscript li
+			{
+				float: left;
+				width: 25%;
+				padding: 0;
+				margin: 0;
+				list-style-type: none;
+			}
+
+				#countdowncont ul#countscript li span
+				{
+					font-size: 58px;
+					line-height: 58px;
+					font-weight: 700;
+					color: #FFF;
+					font-family: "Roboto Condensed";
+				}
+
+				#countdowncont ul#countscript li p
+				{
+					color: rgba(255, 255, 255, 0.6);
+					text-transform: uppercase;
+					font-size: 16px;
+					line-height: 16px;
+					margin: 0;
+				}
+
+		/** Social Media **/
+		
+		#socialmedia ul
+		{
+			margin: 0;
+		}
+
+			#socialmedia ul li
+			{
+				display: inline-block;
+				list-style-type: none;
+				margin: 0 12px 0 0;
+				padding: 0;
+			}
+
+				#socialmedia ul li a
+				{
+					font-size: 27px;
+				}
+				
+#copyright
+{
+	padding: 20px 0 0 0;
+	text-align: center;
+	font-size: 18px;
+}
+.clearfix{
+	margin-top: 10px;
+}
+
+/* ==================================================
+   Responsive Media Queries - Tablets
+================================================== */
+
+@media screen and (max-width: 768px)
+{
+	
+	#outercont #innercont
+	{
+		padding: 25px;
+	}
+	
+	#content
+	{
+		padding: 25px;
+	}
+	
+		#content h1
+		{
+			font-size: 40px;
+			line-height: 50px;
+		}
+	
+		/** Countdown Timer **/
+		
+		#countdowncont
+		{
+			max-width: 400px;
+		}
+		
+			#countdowncont ul#countscript li
+			{
+				width: 50%;
+				padding: 10px 0;
+			}
+	
+}
+
+/* ==================================================
+   Responsive Media Queries - Mobiles
+================================================== */
+
+@media screen and (max-width: 480px)
+{		
+	
+	#outercont #innercont
+	{
+		padding: 15px;
+	}
+	
+	#content
+	{
+		padding: 15px;
+	}
+	
+		/** Countdown Timer **/
+		
+		#countdowncont ul#countscript li
+		{
+			padding: 6px 0;
+		}
+
+			#countdowncont ul#countscript li p
+			{
+				font-size: 16px;
+				line-height: 16px;
+			}
+	
+}
+
