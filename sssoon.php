@@ -24,7 +24,8 @@ function sssoon_activate(){
         'bgimg'=>plugins_url( 'lib/images/default.jpg', __FILE__ ),
         'fb'=>1,
         'tw'=>1,
-        'email'=>1
+        'email'=>1,
+        'social'=>1
     );
 
     $sssoon_options_settings = array(
