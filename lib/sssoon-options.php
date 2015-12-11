@@ -235,7 +235,7 @@ function sssoon_admin_settings()
                                                name="sssoon_options[title]" value="<?php if ($options['title']) {
                                             esc_attr_e($options['title']);
                                         } else {
-                                            esc_attr_e('Sssoon Coming Soon');
+                                            esc_attr_e('Coming Sssoon');
                                         }; ?>"/>
                                         <label class="description"
                                                for="sssoon_options[title]"><?php _e('Html Title Tag ', 'sssoon'); ?></label>
@@ -249,7 +249,7 @@ function sssoon_admin_settings()
                                                name="sssoon_options[heading]" value="<?php if ($options['heading']) {
                                             esc_attr_e($options['heading']);
                                         } else {
-                                            esc_attr_e('Sssoon Coming Soon');
+                                            esc_attr_e('Coming Sssoon');
                                         }; ?>"/>
                                         <label class="description"
                                                for="sssoon_options[heading]"><?php _e('H1 Tag', 'sssoon'); ?></label>
@@ -518,8 +518,9 @@ function sssoon_admin_settings()
 
         <div id="saveResult"></div>
         <div id="sidebar">
-            <div class="sidebar_box info_box">
-                <a href="http://www.creative-tim.com/product/get-shit-done-pro" target="_blank">
+            <div class="sidebar_box info_box"> 
+                <h4 class="text-center">Design your website with a Premium Bootstrap UI KIT</h4>
+                <a href="http://www.creative-tim.com/product/get-shit-done-pro?ref=cswplugin" target="_blank">
                     <img src="<?php echo plugins_url( 'images/adv.jpg', __FILE__ ); ?>" alt="Get Shit Done Kit"/>
                 </a>
             </div>

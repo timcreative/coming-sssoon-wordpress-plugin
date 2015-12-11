@@ -24,9 +24,9 @@ function sssoon_front_view()
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
         <?php
+        
         $design_options = get_option('sssoon_design_options');
         echo '<style>';
-
 
         if ($design_options['bg'] == 'color'):
             echo '.main{
@@ -121,11 +121,9 @@ function sssoon_front_view()
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
     </nav>
-    <div class="main" <!--style="background-image: url('images/default.jpg')-->">
+    <div class="main<?php if($mailing_list['enable']==1): ?> main-mailchimp<?php endif; ?>">
 
-        <!--    Change the image source '/images/default.jpg' with your favourite image.     -->
-
-    <?php if ($design_options['bg'] == 'image'): ?>
+        <?php if ($design_options['bg'] == 'image'): ?>
             <div class="cover black" data-color="black"></div>
         <?php endif; ?>
 
@@ -166,7 +164,7 @@ function sssoon_front_view()
         <div class="footer">
             <div class="container">
                 <?php if(!empty($general['credits'])):?>
-                Made with <i class="fa fa-heart heart"></i> by <a href="http://www.creative-tim.com">Creative Tim</a>.</a>
+                Made with <i class="fa fa-heart heart"></i> by <a href="http://www.creative-tim.com?ref=cswplugin">Creative Tim</a>.</a>
                 <?php endif; ?>
             </div>
         </div>

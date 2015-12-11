@@ -723,9 +723,13 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     position: relative;
     text-align: center;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
-    margin-top: 150px;
+    margin-top: 33vh;
     z-index: 3;
 }
+.main.main-mailchimp .logo{
+    margin-top: 22vh;
+}
+
 .main .logo.cursive{
     font-family: 'Grand Hotel',cursive;
     font-size: 82px;
@@ -736,7 +740,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     z-index: 4;
 }
 .main .motto{
-    min-height: 140px;
+    min-height: 110px;
 }
 .main .motto, .main .subscribe .info-text{
     font-size: 28px;
