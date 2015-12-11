@@ -14,8 +14,8 @@ register_activation_hook(__FILE__, 'sssoon_activate');
 
 function sssoon_activate(){
     $sssoon_options = array(
-        'title'=>'Sssoon Comming Soon',
-        'heading'=>'Sssoon Comming Soon',
+        'title'=>'Comming Sssoon',
+        'heading'=>'Comming Sssoon',
         'abouttext'=>'Find the best Bootstrap 3 freebies and themes on the web.'
     );
 
